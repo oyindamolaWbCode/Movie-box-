@@ -25,16 +25,7 @@ const MovieDetails = () => {
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`
         );
-        console.log(response);
         setMovie(response.data);
-
-        //     } catch (error) {
-        //       console.error("Error fetching movie details:", error);
-        //     }
-        //   };
-
-        //   fetchMovieDetails();
-        // }, [id]);
         // Fetch the video key
         const videoResponse = await axios.get(
           `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apiKey}&language=en-US`

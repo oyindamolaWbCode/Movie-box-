@@ -15,7 +15,7 @@ const ExtractedMovies = () => {
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/top_rated?api_key=${TMDB_API_KEY}&language=en-US&page=1`
         );
-        console.log(response);
+        
         setMovies(response.data.results.slice(0, 10));
       } catch (error) {
         console.error("Error fetching movie data:", error);
