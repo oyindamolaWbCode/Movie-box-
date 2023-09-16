@@ -34,34 +34,32 @@ const ExtractedMovies = () => {
           className="movie-card"
           data-testid="movie-card"
         >
-          <img
-            src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-            alt={movie.title}
-            className="movie-poster"
-            data-testid="movie-poster"
-          />
-          <span>
+          <div className="img-Movie">
+            <img
+              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+              alt={movie.title}
+              className="movie-poster"
+              data-testid="movie-poster"
+            />
+          </div>
+          <div className="details-movie">
             <p className="movie-title" data-testid="movie-title">
               {movie.title}
             </p>
             <p className="rate">
               <span>
-                <span>
-                  <img src={mv} alt="" />
-                </span>
+                <img src={mv} alt="" />
                 <span>87.60 / 100</span>
               </span>
               <span>
-                <span>
-                  <img src={tomatoes} alt="" />
-                </span>
-                <span>97%</span>
+                <img src={tomatoes} alt="" />
+                <span>97%/100</span>
               </span>
             </p>
             <p className="movie-release-date" data-testid="movie-release-date">
-               {movie.release_date}
+              {movie.release_date}
             </p>
-          </span>
+          </div>
         </Link>
       ))}
     </div>
