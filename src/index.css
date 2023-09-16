@@ -1,0 +1,344 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.poster-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.nav-part {
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mob {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+input[type="text"] {
+  padding: 8px 180px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+.sear {
+  margin-left: -50px;
+}
+
+.logo,
+.searchBar,
+.sign-Menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign-Menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trendy {
+  position: absolute;
+  left: 80px;
+  top: 200px;
+}
+
+.title {
+  color: white;
+  letter-spacing: 0.5rem;
+  font-size: 50px;
+}
+
+.recommendation {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.no-shrink {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.mv,
+.reviews {
+  display: flex;
+}
+
+.rating {
+  color: white;
+}
+
+.summary {
+  width: 400px;
+  margin: 15px 0px;
+}
+
+.movie-category {
+  padding: 40px 80px;
+}
+
+.featured-arrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more {
+  display: flex;
+}
+
+.anchor {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.featured-arrow {
+  margin-bottom: 30px;
+}
+
+/* MovieGrid.css */
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Responsive grid with a minimum width of 200px for each card */
+  gap: 10px;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* padding: 10px; */
+  text-decoration: none;
+}
+
+.movie-poster {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.movie-release-date {
+  color: #666;
+}
+
+.details-para {
+  color: black;
+}
+
+.movie-title {
+  color: #111827;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.rate {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #111827;
+}
+
+.rate>span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.full-page {
+  padding:0px;
+  display: flex;
+  
+  width:100%;
+}
+
+.leftSide {
+  width: 20%;
+  height: 100%;
+  border-radius: 0 45px 45px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+
+.rightSide{
+  width: 70%;
+  padding: 20px;
+  height: 100%;
+}
+
+.TheSides>span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+
+.TheSides>a {
+  width: 100%;
+  gap: 20px;
+  font-weight: 600;
+  color: #333;
+  font-size: 20px;
+  margin-top: 20px;
+  
+}
+
+.TheSides>span{
+  color: #333;
+}
+
+.TheSides>ul,
+li {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+}
+
+.TheSides>li {
+  margin: 10px 20px;
+}
+
+.TheSides>ul,
+li,
+a {
+  font-weight: 600;
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0px;
+  display: flex;
+  gap: 20px;
+}
+
+.MovieSide {
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.TheSides>ul {
+  padding: 0px;
+}
+
+ .AsideWord{
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 20px;
+  border: 1px solid rgba(190,18,60,.7);
+  background: rgba(248,231,235,.4);
+  padding: 20px;
+  font-family:  Poppins,sans-serif;
+}
+
+.AsideWord>p{
+  color: rgb(24, 24, 24);
+}
+
+.AsideWord>a{
+  border-radius: 30px;
+    background: rgba(190,18,60,.2);
+    color: #be123c;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a[aria-label="Home"]{
+  color: #666;
+  text-decoration: none;
+}
+
+.genre{
+  color:#be123c;
+  display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info{
+  display: flex;
+    gap: 10px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.info-title{
+  color: #404040;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Infos{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.videoWrap{
+  position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.videoWrap>iframe{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* https://imdb-movie-box.netlify.app/movie/278 */
